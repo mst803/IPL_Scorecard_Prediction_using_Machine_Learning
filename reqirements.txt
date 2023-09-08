@@ -2,3 +2,4 @@ pandas
 numpy
 pickle
 sklearn
+scikit-learn
