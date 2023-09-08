@@ -185,7 +185,7 @@ def main():
 
     with open("RF_1.pkl","rb") as f:
         RF_1=pickle.load(f)
-    with open("RF_2.pkl","rb") as f:
+    with open("RF_3.pkl","rb") as f:
         RF_2=pickle.load(f)
 
     def get_key(dictionary, target_value):
