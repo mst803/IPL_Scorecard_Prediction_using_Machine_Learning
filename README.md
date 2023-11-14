@@ -16,7 +16,7 @@ Features
 
     Evaluation Metrics: The model's performance is assessed using appropriate evaluation metrics such as accuracy, precision, recall, and F1-score. This helps in understanding how well the model is performing and where it might need improvement.
 
-    Deployment: Once the model proves to be effective, it can be deployed as a web application, API, or any other accessible format for users to get real-time predictions for upcoming IPL matches.
+    Deployment: The model is deployed using streamlit to get real-time predictions for upcoming IPL matches.
 
 ### Requirements
 
