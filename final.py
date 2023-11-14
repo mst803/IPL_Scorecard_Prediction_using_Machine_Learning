@@ -1,6 +1,5 @@
 import pickle
 import streamlit as st
-import sklearn
 from Dict import stadium_size,bat,ball,teams,team_
 
 class Queue:
