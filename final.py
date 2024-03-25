@@ -183,9 +183,9 @@ def main():
     Team_1=team_[team_1]
     Team_2=team_[team_2]
 
-    with open("RF_1.pkl","rb") as f:
-        RF_1=pickle.load(f)
-    with open("RF_3.pkl","rb") as f:
+    with open("LF_1.pkl","rb") as f:
+        LF_1=pickle.load(f)
+    with open("RF_2.pkl","rb") as f:
         RF_2=pickle.load(f)
 
     def get_key(dictionary, target_value):
@@ -230,7 +230,7 @@ def main():
         if all_out:
             break
         for k in range(1,7):
-            if (RF_2.predict_proba([[inn,j,k,stadium,toss,on_field.peek(),bowling_2[j],Team_1,Team_2,Year]])[:,1])*r_f*r_f_o>0.5:
+            if (LF_1.predict_proba([[inn,j,k,stadium,toss,on_field.peek(),bowling_2[j],Team_1,Team_2,Year]])[:,1])*r_f*r_f_o>0.5:
                 r_f=0.8
                 r_f_o-=0.1
                 a=on_field.dequeue()
@@ -339,7 +339,7 @@ def main():
         if all_out:
             break
         for k in range(1,7):
-            if (RF_2.predict_proba([[inn,j,k,stadium,toss,on_field.peek(),bowling_1[j],Team_2,Team_1,Year]])[:,1])*r_f*r_f_o>0.5:
+            if (LF_1.predict_proba([[inn,j,k,stadium,toss,on_field.peek(),bowling_1[j],Team_2,Team_1,Year]])[:,1])*r_f*r_f_o>0.5:
                 r_f=0.8
                 r_f_o-=0.1
                 a=on_field.dequeue()
