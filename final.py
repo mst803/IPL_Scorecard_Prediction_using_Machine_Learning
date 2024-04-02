@@ -339,7 +339,7 @@ def main():
         if all_out:
             break
         for k in range(1,7):
-            if (LF_1.predict_proba([[inn,j,k,stadium,toss,on_field.peek(),bowling_1[j],Team_2,Team_1,Year]])[:,1])*r_f*r_f_o>0.28:
+            if (LF_1.predict_proba([[inn,j,k,stadium,toss,on_field.peek(),bowling_1[j],Team_2,Team_1,Year]])[:,1])*r_f*r_f_o>0.29:
                 r_f=0.8
                 r_f_o-=0.1
                 a=on_field.dequeue()
